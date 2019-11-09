@@ -2,7 +2,7 @@ users:
   alice:
     topics:
       foo:
-        - Consume
+        - All
   bob:
     groups:
       bar*:
