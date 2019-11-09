@@ -1,0 +1,4 @@
+KafkaPrincipal,ResourceType,PatternType,ResourceName,Operation,PermissionType,Host
+User:alice-team_red,Topic,LITERAL,foo,Read,Allow,*
+User:bob-team_red,Group,bar,PREFIXED,Write,Deny,12.34.56.78
+User:peter-team_blue,Cluster,LITERAL,kafka-cluster,Create,Allow,*
