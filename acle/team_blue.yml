@@ -1,0 +1,5 @@
+users:
+  peter:
+    topics:
+      bar:
+        - All
