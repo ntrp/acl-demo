@@ -1,0 +1,9 @@
+users:
+  alice:
+    topics:
+      foo:
+        - Consume
+  bob:
+    groups:
+      bar*:
+        - Write,Deny,12.34.56.78
