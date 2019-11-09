@@ -1,0 +1,15 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.7.2
+    working_directory: ~/repo
+    description: Lint YAML Files
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies
+          command: pip install --user yamllint
+      - run:
+          name: Lint YAMLs
+          command: /home/circleci/.local/bin/yamllint ~/repo
